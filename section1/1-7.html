@@ -5,9 +5,15 @@
 	</head>
 	<body>
 		<script>
+			//일단 arr들을 10으로 나눔
+			//그다음 나머지를 확인하여 day랑 같으면 answer의 카운트를 증가시켜줌
 			function solution(day, arr) {
 				let answer = 0;
-
+				for (let i = 0; i < arr.length; i++) {
+					if (arr[i] % 10 === day) {
+						answer++;
+					}
+				}
 				return answer;
 			}
 

@@ -9,6 +9,16 @@
 				let answer,
 					min = Number.MAX_SAFE_INTEGER;
 
+				for (let i = 0; i < arr.length; i++) {
+					if (i === 0) {
+						min = arr[i];
+					} else {
+						if (min > arr[i]) {
+							min = arr[i];
+						}
+					}
+				}
+				answer = min;
 				return answer;
 			}
 
