@@ -7,6 +7,11 @@
 		<script>
 			function solution(s) {
 				let answer = "";
+				let arr = s.split("");
+				for (let i = 0; i < arr.length; i++) {
+					arr[i] = arr[i].toUpperCase();
+				}
+				answer = arr.join("");
 				return answer;
 			}
 
